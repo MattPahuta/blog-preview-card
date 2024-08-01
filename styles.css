@@ -1,0 +1,80 @@
+/*
+Author: Matt Pahuta
+https://www.mattpahuta.com
+Date: August 2024
+*/
+
+/* **************** */
+/* Custom Variables */
+/* **************** */
+:root {
+  /* Fonts */
+  --ff-primary: "Figtree", sans-serif;;
+  /* Font Sizes */
+  --fs-300: 0.875rem; /* 14px */
+  --fs-400: 1rem; /* 16px */
+  --fs-600: 1.5rem; /* 24px */
+  /* Colors */
+  --clr-primary: #F4D04E;
+  --clr-neutral-950: #111111;
+  --clr-neutral-500: #6B6B6B;
+  --clr-white: #FFFFFF;
+  /* Spacing */
+  --spacing-50: 0.25rem; /* 4px */
+  --spacing-100: 0.5rem; /* 8px */
+  --spacing-150: 0.75rem; /* 12px */
+  --spacing-200: 1.5rem; /* 24px */
+  /* Border radius */
+  --br-xtra-soft: 4px;
+  --br-soft: 10px;
+  --br-med: 20px;
+  --br-round: 50%;
+
+}
+
+/* RESET */
+/* Josh Comeau custom css reset */
+/* https://www.joshwcomeau.com/css/custom-css-reset/ */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/* BASE STYLES */
+body {
+  min-height: 100svh;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-400);
+  line-height: 1.5;  
+  background: var(--clr-primary);
+  color: var(--clr-neutral-950);
+}
