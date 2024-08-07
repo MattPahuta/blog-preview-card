@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [FEM solution URL](https://your-solution-url.com)
+- Solution URL: [FEM solution URL](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS/hub)
 - Live Site URL: [live URL](https://blog-preview-card-blush-eight.vercel.app/)
 
 ## My process
