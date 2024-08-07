@@ -14,7 +14,6 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ## Overview
@@ -28,10 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
+![](./project-ss.png)
 
 ### Links
 
@@ -45,42 +41,37 @@ Add a screenshot of your solution. The easiest way to do this is to use Firefox 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I used some of the principles of Heydon Pickering's [Inclusive Components blog](https://inclusive-components.design/cards/), specifically the card section. Making the entire card clickable seemed appropriate so I followed his pseudo-content approach. 
 
-To see how you can add code snippets, see below:
+Additionally, I'm late addopting the `:is()` pesudo-class in many of my projects, but was happy to find it a simple and useful method here.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.card a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+
+.card a:is(:hover, :focus-visible) {
+  color: var(--clr-primary);
 }
 ```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I've seen some other FEM users scope many of the custom variables locally within the their card elements. This seems like a great approach and something I'll look to do in the future with similar components.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
+- [Inclusive Components](https://inclusive-components.design) - Noted above, but here it is again. This content may be several years old, but the design patterns Heydon Pickering walks you through are excellent.
 
 ## Author
 
@@ -88,8 +79,3 @@ Use this section to outline areas that you want to continue focusing on in futur
 - Frontend Mentor - [@mattpahuta](https://www.frontendmentor.io/profile/MattPahuta)
 - Twitter - [@mattpahuta](https://www.twitter.com/MattPahuta)
 - LinkedIn - [Matt Pahuta](www.linkedin.com/in/mattpahuta)
-
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
