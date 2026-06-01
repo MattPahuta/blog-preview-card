@@ -149,13 +149,10 @@ body {
   outline: none;
 }
 
-.card a::after {
+.card a:after {
   content: '';
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  inset: 0;;
 }
 
 .card a:is(:hover, :focus-within) {
