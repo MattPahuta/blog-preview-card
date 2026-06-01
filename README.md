@@ -75,7 +75,6 @@ I've seen some other FEM users scope many of the custom variables locally within
 
 ## Author
 
-- Website - [Matt Pahuta](https://www.mattpahuta.com)
+- Website - [Matt Pahuta](https://www.mattpahuta.dev)
 - Frontend Mentor - [@mattpahuta](https://www.frontendmentor.io/profile/MattPahuta)
-- Twitter - [@mattpahuta](https://www.twitter.com/MattPahuta)
 - LinkedIn - [Matt Pahuta](www.linkedin.com/in/mattpahuta)

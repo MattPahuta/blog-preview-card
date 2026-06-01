@@ -110,7 +110,7 @@ body {
   box-shadow: var(--box-shadow-card_hover);
 }
 
-.card__img img {
+.card__img {
   min-height: 200px;
   object-fit: cover;
   border-radius: var(--br-soft);
@@ -158,7 +158,7 @@ body {
   left: 0;
 }
 
-.card a:is(:hover, :focus-visible) {
+.card a:is(:hover, :focus-within) {
   color: var(--clr-primary);
 }
 
